@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent; /* Fondo transparente por defecto */
+    color: white;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    position: fixed; /* Fijo en la parte superior */
+    width: 100%; /* Ancho completo de la pantalla */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Encima de otros elementos */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+  
+  .header.scrolled {
+    background-color: #333; /* Color de fondo al hacer scroll */
+  }
+  
+  .logo img {
+    height: 50px; /* Altura del logo */
+    display: block; /* Asegura que no haya espacios debajo de la imagen */
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos de navegación */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaciado entre los enlaces */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0; /* Elimina el margen por defecto */
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block; /* Hace que el enlace ocupe el bloque completo */
+    padding: 5px 10px; /* Espaciado interno */
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
